@@ -18,13 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.wildernessoddesyapi.network.WildernessOddesyApiModVariables;
-import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModTabs;
-import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModPotions;
-import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModMobEffects;
-import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModItems;
-import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModEntities;
-import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModBlocks;
+import net.mcreator.wildernessoddesyapi.init.WildernessOddesyApiModSounds;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -43,16 +37,7 @@ public class WildernessOddesyApiMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
-		WildernessOddesyApiModBlocks.REGISTRY.register(modEventBus);
-
-		WildernessOddesyApiModItems.register(modEventBus);
-		WildernessOddesyApiModEntities.REGISTRY.register(modEventBus);
-		WildernessOddesyApiModTabs.REGISTRY.register(modEventBus);
-		WildernessOddesyApiModVariables.ATTACHMENT_TYPES.register(modEventBus);
-
-		WildernessOddesyApiModPotions.REGISTRY.register(modEventBus);
-		WildernessOddesyApiModMobEffects.REGISTRY.register(modEventBus);
+		WildernessOddesyApiModSounds.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

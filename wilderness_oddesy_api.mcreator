@@ -1,415 +1,191 @@
 {
   "mod_elements": [
     {
-      "name": "GoodMorning",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "good_morning",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/GoodMorningProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "Crawlkey",
-      "type": "keybind",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawlkey",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/network/CrawlkeyMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "Crawl",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawl",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/CrawlProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "Setupcrawl",
-      "type": "procedure",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "setupcrawl",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/SetupcrawlProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "Stopcrawling",
-      "type": "procedure",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stopcrawling",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/StopcrawlingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "Lightingenergyblock",
-      "type": "block",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightingenergyblock",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/wilderness_oddesy_api/loot_tables/blocks/lightingenergyblock.json",
-          "src/main/resources/assets/wilderness_oddesy_api/blockstates/lightingenergyblock.json",
-          "src/main/java/net/mcreator/wildernessoddesyapi/block/LightingenergyblockBlock.java",
-          "src/main/resources/assets/wilderness_oddesy_api/models/item/lightingenergyblock.json",
-          "src/main/resources/assets/wilderness_oddesy_api/models/block/lightingenergyblock.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "Spawnlightningenergyblock",
-      "type": "procedure",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawnlightningenergyblock",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/SpawnlightningenergyblockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "Lightingaroww",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightingaroww",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/LightingarowwProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "WildernessOddesyAPI",
-      "type": "tab",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wilderness_oddesy_api",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Lightningarrow",
-      "type": "tool",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightningarrow",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/wilderness_oddesy_api/models/item/lightningarrow.json",
-          "src/main/java/net/mcreator/wildernessoddesyapi/item/LightningarrowItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Lightningarrowprojectile",
-      "type": "projectile",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightningarrowprojectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/entity/LightningarrowprojectileEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "Lightningbow",
-      "type": "item",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lightningbow",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/item/LightningbowItem.java",
-          "src/main/resources/assets/wilderness_oddesy_api/models/item/lightningbow.json"
-        ]
-      }
-    },
-    {
-      "name": "Portalframe",
-      "type": "block",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portalframe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/wilderness_oddesy_api/loot_tables/blocks/portalframe.json",
-          "src/main/resources/assets/wilderness_oddesy_api/blockstates/portalframe.json",
-          "src/main/java/net/mcreator/wildernessoddesyapi/block/PortalframeBlock.java",
-          "src/main/resources/assets/wilderness_oddesy_api/models/block/portalframe.json",
-          "src/main/resources/assets/wilderness_oddesy_api/models/item/portalframe.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "Thevault",
-      "type": "dimension",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thevault",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/item/ThevaultItem.java",
-          "src/main/java/net/mcreator/wildernessoddesyapi/world/teleporter/ThevaultTeleporter.java",
-          "src/main/resources/data/wilderness_oddesy_api/dimension/thevault.json",
-          "src/main/resources/assets/wilderness_oddesy_api/models/block/thevault_portal_ew.json",
-          "src/main/java/net/mcreator/wildernessoddesyapi/block/ThevaultPortalBlock.java",
-          "src/main/resources/data/wilderness_oddesy_api/dimension_type/thevault.json",
-          "src/main/resources/assets/wilderness_oddesy_api/models/block/thevault_portal_ns.json",
-          "src/main/resources/assets/wilderness_oddesy_api/models/item/thevault.json",
-          "src/main/resources/assets/wilderness_oddesy_api/blockstates/thevault_portal.json",
-          "src/main/java/net/mcreator/wildernessoddesyapi/world/teleporter/ThevaultPortalShape.java",
-          "src/main/java/net/mcreator/wildernessoddesyapi/world/dimension/ThevaultDimension.java"
-        ]
-      }
-    },
-    {
-      "name": "FlashS",
-      "type": "potioneffect",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flash_s",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/potion/FlashSMobEffect.java"
-        ]
-      }
-    },
-    {
-      "name": "FlashSpeed",
-      "type": "potion",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flash_speed",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Chunkgenoptomizer",
-      "type": "mixin",
-      "sortid": 20,
-      "compiles": false,
-      "locked_code": true,
-      "registry_name": "chunkgenoptomizer",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/ChunkgenoptomizerMixin.java"
-        ]
-      }
-    },
-    {
-      "name": "Test",
-      "type": "biome",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/wilderness_oddesy_api/worldgen/configured_feature/test_tree.json",
-          "src/main/resources/data/wilderness_oddesy_api/worldgen/placed_feature/test_tree.json",
-          "src/main/resources/data/wilderness_oddesy_api/worldgen/biome/test.json"
-        ]
-      },
-      "path": "~/biomes"
-    },
-    {
-      "name": "EntityAi",
-      "type": "mixin",
-      "sortid": 23,
-      "compiles": false,
-      "locked_code": true,
-      "registry_name": "entity_ai",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/EntityAiMixin.java"
-        ]
-      },
-      "path": "~/AI"
-    },
-    {
-      "name": "CustomGoal",
+      "name": "GenericCacheManager",
       "type": "code",
-      "sortid": 24,
-      "compiles": false,
+      "sortid": 33,
+      "compiles": true,
       "locked_code": true,
-      "registry_name": "custom_goal",
+      "registry_name": "generic_cache_manager",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/CustomGoal.java"
+          "src/main/java/net/mcreator/wildernessoddesyapi/GenericCacheManager.java"
         ]
       },
-      "path": "~/AI"
-    }
-  ],
-  "variable_elements": [
+      "path": "~/Optimizations"
+    },
     {
-      "name": "is_player_crawling",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
+      "name": "CustomItem",
+      "type": "code",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "custom_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/CustomItem.java"
+        ]
+      },
+      "path": "~/Optimizations"
+    },
+    {
+      "name": "MobStages",
+      "type": "code",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mob_stages",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/MobStages.java"
+        ]
+      },
+      "path": "~/custom code"
+    },
+    {
+      "name": "LevelAccessor",
+      "type": "code",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "level_accessor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/LevelAccessor.java"
+        ]
+      },
+      "path": "~/DynamicWeatherEvent"
+    },
+    {
+      "name": "SeekShelterDuringStormGoal",
+      "type": "code",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "seek_shelter_during_storm_goal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/SeekShelterDuringStormGoal.java"
+        ]
+      },
+      "path": "~/DynamicWeatherEvent"
+    },
+    {
+      "name": "WolfShelterGoal",
+      "type": "code",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wolf_shelter_goal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/WolfShelterGoal.java"
+        ]
+      },
+      "path": "~/DynamicWeatherEvent"
+    },
+    {
+      "name": "EntityMixin",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "entity_mixin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/EntityMixinMixin.java"
+        ]
+      },
+      "path": "~/DynamicWeatherEvent"
+    },
+    {
+      "name": "DynamicWeatherEffects",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dynamic_weather_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/DynamicWeatherEffectsMixin.java"
+        ]
+      },
+      "path": "~/DynamicWeatherEvent"
+    },
+    {
+      "name": "MobSpawn",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mob_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/MobSpawnMixin.java"
+        ]
+      },
+      "path": "~/mixins"
+    },
+    {
+      "name": "MobStagesMixin",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mob_stages_mixin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/MobStagesMixinMixin.java"
+        ]
+      },
+      "path": "~/mixins"
+    },
+    {
+      "name": "DayNightCycle",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "day_night_cycle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/mixins/DayNightCycleMixin.java"
+        ]
+      },
+      "path": "~/mixins"
     }
   ],
-  "sound_elements": [],
-  "tag_elements": {
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.GRASS"
-    ]
-  },
-  "language_map": {
-    "en_us": {
-      "key.wilderness_oddesy_api.crawlkey": "Crawl key",
-      "key.wilderness_oddesy_api_neo.crawlkey": "Crawl key",
-      "item.wilderness_oddesy_api.thevault": "Thevault Portal Igniter",
-      "item.wilderness_oddesy_api_neo.lightingbow": "Lightingbow",
-      "item_group.wilderness_oddesy_api.wilderness_oddesy_api": "Wilderness Oddesy API",
-      "block.wilderness_oddesy_api_neo.lightingenergyblock": "Lightingenergyblock",
-      "block.wilderness_oddesy_api.portalframe": "Portalframe",
-      "item.minecraft.lingering_potion.effect.flash_speed": "Lingering Potion of Flash Speed",
-      "block.wilderness_oddesy_api.lightingenergyblock": "Lightingenergyblock",
-      "effect.wilderness_oddesy_api.flash_s": "Flash S",
-      "biome.wilderness_oddesy_api.test": "Test",
-      "item.wilderness_oddesy_api.lightningbow": "Lightningbow",
-      "item.minecraft.potion.effect.flash_speed": "Potion of Flash Speed",
-      "item.minecraft.splash_potion.effect.flash_speed": "Splash Potion of Flash Speed",
-      "item.wilderness_oddesy_api_neo.lightningarrow": "Lightningarrow",
-      "item.wilderness_oddesy_api.lightningarrow": "Lightningarrow",
-      "item.minecraft.tipped_arrow.effect.flash_speed": "Arrow of Flash Speed"
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "i_ran_so_far_away",
+      "files": [
+        "i_ran_so_far_away"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
+  ],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "AI",
-        "children": []
-      },
-      {
-        "name": "biomes",
-        "children": []
-      },
-      {
         "name": "Procedures",
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "custom code",
+        "children": []
+      },
+      {
+        "name": "Optimizations",
+        "children": []
+      },
+      {
+        "name": "mixins",
+        "children": []
+      },
+      {
+        "name": "DynamicWeatherEvent",
         "children": []
       }
     ]
@@ -417,8 +193,8 @@
   "workspaceSettings": {
     "modid": "wilderness_oddesy_api",
     "modName": "Wilderness Oddesy API",
-    "version": "0.6.0",
-    "description": "this is a mod made for the modpack wilderness odessy. it has lots of tools and things in it.",
+    "version": "0.9.0-beta.3",
+    "description": "this is a mod made for the modpack wilderness odessy. it has opomizations and mixins to make your experince better.",
     "author": "thunderrock424242",
     "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
@@ -428,7 +204,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "neoforge-1.20.4",
-    "credits": "Created using mod maker MCreator but mostly 99% made by me thunder",
+    "credits": "Created using mod maker MCreator but i codded all the parts to the mod",
     "modElementsPackage": "net.mcreator.wildernessoddesyapi"
   },
   "mcreatorVersion": 202400118518

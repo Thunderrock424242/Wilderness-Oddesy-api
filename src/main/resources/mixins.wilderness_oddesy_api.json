@@ -3,8 +3,11 @@
   "package": "net.mcreator.wildernessoddesyapi.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ChunkgenoptomizerMixin",
-    "EntityAiMixin"
+    "EntityMixinMixin",
+    "DynamicWeatherEffectsMixin",
+    "MobSpawnMixin",
+    "MobStagesMixinMixin",
+    "DayNightCycleMixin"
   ],
   "client": [],
   "minVersion": "0.8"

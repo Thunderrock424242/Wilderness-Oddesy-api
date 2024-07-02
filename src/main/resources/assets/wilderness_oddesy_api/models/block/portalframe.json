@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "wilderness_oddesy_api:block/improvedportalframeblock",
-    "particle": "wilderness_oddesy_api:block/improvedportalframeblock"
-  },
-  "render_type": "solid"
-}

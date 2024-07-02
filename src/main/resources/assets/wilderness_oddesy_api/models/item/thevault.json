@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "wilderness_oddesy_api:item/portal_room_key"
-  }
-}
