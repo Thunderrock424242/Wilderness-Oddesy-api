@@ -29,6 +29,5 @@ public class CrawlProcedure {
 		if (entity.getData(WildernessOddesyApiModVariables.PLAYER_VARIABLES).Is_player_crawling) {
 			entity.setPose(Pose.SWIMMING);
 		}
-		assert Boolean.TRUE; //#dbg:Crawl:marker1
 	}
 }

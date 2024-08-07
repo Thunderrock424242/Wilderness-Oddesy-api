@@ -27,45 +27,6 @@
       "path": "~/Optimizations"
     },
     {
-      "name": "MobStages",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mob_stages",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/MobStages.java"
-        ]
-      },
-      "path": "~/custom code"
-    },
-    {
-      "name": "MobSpawnMixin",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mob_spawn_mixin",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/MobSpawnMixin.java"
-        ]
-      },
-      "path": "~/mixins"
-    },
-    {
-      "name": "MobStagesMixin",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mob_stages_mixin",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/MobStagesMixin.java"
-        ]
-      },
-      "path": "~/mixins"
-    },
-    {
       "name": "WildernessOddessyApi",
       "type": "code",
       "compiles": true,
@@ -193,31 +154,79 @@
       "path": "~/Procedures"
     },
     {
-      "name": "Tptodimesnion",
-      "type": "command",
+      "name": "EntityOutlineRenderer",
+      "type": "code",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "tptodimesnion",
+      "registry_name": "entity_outline_renderer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/command/TptodimesnionCommand.java"
+          "src/main/java/net/mcreator/wildernessoddesyapi/EntityOutlineRenderer.java"
+        ]
+      },
+      "path": "~/tools and hacks "
+    },
+    {
+      "name": "AdminCommand",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "admin_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/AdminCommand.java"
+        ]
+      },
+      "path": "~/Commands/multiplayer tools"
+    },
+    {
+      "name": "ModCommands",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mod_commands",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/ModCommands.java"
         ]
       },
       "path": "~/Commands"
     },
     {
-      "name": "TP",
-      "type": "procedure",
+      "name": "AIUtil",
+      "type": "code",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "tp",
+      "registry_name": "ai_util",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/wildernessoddesyapi/procedures/TPProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Procedures"
+          "src/main/java/net/mcreator/wildernessoddesyapi/AIUtil.java"
+        ]
+      }
+    },
+    {
+      "name": "BiomeFileWriter",
+      "type": "code",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "biome_file_writer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/BiomeFileWriter.java"
+        ]
+      }
+    },
+    {
+      "name": "TPToDimesnions",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tp_to_dimesnions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wildernessoddesyapi/TPToDimesnions.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -234,21 +243,15 @@
       "value": "false"
     }
   ],
-  "sound_elements": [
-    {
-      "name": "i_ran_so_far_away",
-      "files": [
-        "i_ran_so_far_away"
-      ],
-      "category": "music",
-      "subtitle": ""
-    }
-  ],
+  "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "key.wilderness_oddesy_api.crawl_key": "Crawl Key"
+    },
+    "el_cy": {
+      "key.wilderness_oddesy_api.crawl_key": "κλειδί ανίχνευσης"
     }
   },
   "foldersRoot": {
@@ -267,14 +270,6 @@
         "children": []
       },
       {
-        "name": "mixins",
-        "children": []
-      },
-      {
-        "name": "AI",
-        "children": []
-      },
-      {
         "name": "Main Mod Class",
         "children": []
       },
@@ -284,6 +279,15 @@
       },
       {
         "name": "Commands",
+        "children": [
+          {
+            "name": "multiplayer tools",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "tools and hacks ",
         "children": []
       }
     ]
@@ -291,7 +295,7 @@
   "workspaceSettings": {
     "modid": "wilderness_oddesy_api",
     "modName": "Wilderness Oddesy API",
-    "version": "0.9.0-beta.3",
+    "version": "0.9.2",
     "description": "this is a mod made for the modpack wilderness odessy. it has opomizations and mixins to make your experince better.",
     "author": "thunderrock424242",
     "websiteURL": "https://mcreator.net",
@@ -300,10 +304,12 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "neoforge-1.20.6",
     "credits": "Created using mod maker MCreator but i codded all the parts to the mod",
     "modElementsPackage": "net.mcreator.wildernessoddesyapi"
   },
-  "mcreatorVersion": 202400229712
+  "mcreatorVersion": 202400232117
 }

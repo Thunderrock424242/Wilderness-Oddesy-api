@@ -15,6 +15,5 @@ public class SetupCrawlProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 		}
-		assert Boolean.TRUE; //#dbg:SetupCrawl:marker1
 	}
 }
